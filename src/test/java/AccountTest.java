@@ -20,13 +20,15 @@ public class AccountTest {
     public static Object[][] getName(){
         return new Object[][]{
                 {"Тимоти Шаламе", true},
+                {"Тимоти Шаламетесттт", true},
+                {"Т Ш", true},
                 {"ТимотиШаламе", false},
-                {" Тимоти Шаламе", false},
-                {"Тимоти Шаламе ", false},
                 {"ТимотиШаламе ", false},
                 {" ТимотиШаламе", false},
                 {"Тимотиаламе Тимотиаламе", false},
                 {"Ти", false},
+                {"Тимоти Шал аме", false},
+                {null , false},
         };
     }
 

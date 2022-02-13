@@ -5,8 +5,9 @@ public class Account {
         this.name = name;
     }
 
-    public boolean checkNameToEmboss() {
-        if (name.length() < 3 || name.length() > 19) {
+    public boolean checkNameToEmboss(){
+
+        if (name == null || name.length() < 3 || name.length() > 19) {
             return false;
         }
 
@@ -22,7 +23,7 @@ public class Account {
             return false;
         }
 
-        if (countGap() > 1 || countGap() < 1 ) {
+        if (countGap() != 1 ) {
             return false;
         }
 
